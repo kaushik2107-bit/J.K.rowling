@@ -282,3 +282,19 @@ a {
     font-size: 15px;
     font-family: 'Arial', sans-serif;
 }
+@media only screen and (max-width: 600px) {
+    .content {
+        flex-direction: column;
+        width: 100%;
+    } 
+    .left-nav {
+        display:  none;
+    }
+    .content .blog {
+        width: 100%;
+    }
+    .content .right-nav {
+        width: 100%;
+        padding-bottom: 100px;
+    }
+}
