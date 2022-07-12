@@ -1,4 +1,7 @@
 @media only screen and (max-width: 600px) {
+    .content {
+        width: 100% !important;
+    }
     .nav-bar ul {
         display: none;
     }
@@ -23,6 +26,7 @@
         border: 1px solid black;
         display: none;
         position: fixed;
+        list-style: none;
     }
     .ham_menu li {
         width: 100%;

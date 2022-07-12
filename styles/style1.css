@@ -143,3 +143,62 @@ form textarea {
 form input {
     font-size: 15px;
 }
+
+@media only screen and (max-width: 600px) {
+    .content {
+        width: 100% !important;
+    }
+    .nav-bar ul {
+        display: none;
+    }
+    .nav-bar .logo {
+        width: 90%;
+    }
+    .nav-bar button {
+        background-color: transparent;
+        border: none;
+        font-size: 40px;
+        width: 100px;
+        min-width: 10%;
+    }
+    #fa-bars {
+        display: block;  
+    }
+    #fa-times {
+        display: none;
+    }
+    #ham_menu {
+        width: 100%;
+        border: 1px solid black;
+        display: none;
+        position: fixed;
+        list-style: none;
+    }
+    .ham_menu li {
+        width: 100%;
+        height: 50px;
+        background-color: black;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .ham_menu li a {
+        color: white;
+    }
+}
+@media only screen and (max-width: 300px) {
+    .nav-bar {
+        height: 200px;
+    }
+    .content {
+        padding-top: 200px;
+    }
+}
+@media only screen and (min-width: 600px) {
+    .nav-bar button {
+        display: none !important;
+    }
+    .ham_menu {
+        display: none !important;
+    }
+}

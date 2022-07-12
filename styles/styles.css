@@ -344,3 +344,11 @@ a {
         padding-top: 200px;
     }
 }
+@media only screen and (min-width: 600px) {
+    .nav-bar button {
+        display: none !important;
+    }
+    .ham_menu {
+        display: none !important;
+    }
+}
