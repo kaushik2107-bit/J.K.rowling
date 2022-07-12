@@ -10,7 +10,6 @@ a {
     text-decoration: none;
     color: black;
 }
-
 /* menu-bar starts*/
 .nav-bar {
     background-color: black;
@@ -46,6 +45,9 @@ a {
 }
 .nav-bar ul li:nth-child(1) a {
     color: red;
+}
+.nav-bar button {
+    display: none;
 }
 /*menu-bar ends*/
 
@@ -296,5 +298,49 @@ a {
     .content .right-nav {
         width: 100%;
         padding-bottom: 100px;
+    }
+    .nav-bar ul {
+        display: none;
+    }
+    .nav-bar .logo {
+        width: 90%;
+    }
+    .nav-bar button {
+        background-color: transparent;
+        border: none;
+        font-size: 40px;
+        width: 100px;
+        min-width: 10%;
+    }
+    #fa-bars {
+        display: block;  
+    }
+    #fa-times {
+        display: none;
+    }
+    #ham_menu {
+        width: 100%;
+        border: 1px solid black;
+        display: none;
+        position: fixed;
+    }
+    .ham_menu li {
+        width: 100%;
+        height: 50px;
+        background-color: black;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .ham_menu li a {
+        color: white;
+    }
+}
+@media only screen and (max-width: 300px) {
+    .nav-bar {
+        height: 200px;
+    }
+    .content {
+        padding-top: 200px;
     }
 }

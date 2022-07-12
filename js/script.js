@@ -24,3 +24,22 @@ function validateForm() {
     }
 
 }
+
+function toggle1() {
+    var x = document.getElementById("fa-bars");
+    var y = document.getElementById("fa-times");
+    var p = document.getElementById("ham_menu");
+
+    y.style.display = 'block';
+    x.style.display = 'none';
+    p.style.display = 'block';
+}
+function toggle2() {
+    var x = document.getElementById("fa-bars");
+    var y = document.getElementById("fa-times");
+    var p = document.getElementById("ham_menu");
+
+    y.style.display = 'none';
+    x.style.display = 'block';
+    p.style.display = 'none';
+}
