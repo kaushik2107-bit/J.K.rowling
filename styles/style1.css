@@ -1,0 +1,143 @@
+.content {
+    flex-direction: column;
+    width: 70%;
+    margin: auto;
+    text-align: center;
+}
+.content .title1 {
+    /* font-family: 'Fira Sans', sans-serif;
+    font-family: 'Mulish', sans-serif; */
+    font-family: 'Oswald', sans-serif;
+    /* font-family: 'Raleway', sans-serif; */
+    /* font-family: 'Splash', cursive; */
+
+    font-size: 30px;
+}
+.content .desc {
+    font-family: 'Mulish', sans-serif;
+    font-size: 20px;
+    padding-top: 10px;
+}
+.content .section {
+    display: flex;
+    width: 100%;
+    flex-flow: wrap;
+}
+.content .section .book {
+    width: 200px;
+    height: auto;
+    padding-left: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.content .section .book .image {
+    width: 200px;
+    height: 200px;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.content .section .book .title {
+    text-transform: uppercase;
+    font-family: 'Mulish', sans-serif;
+    font-weight: 900;
+}
+
+/* about page */
+.content {
+    display: flex;
+    width: 100%;
+    height: auto;
+}
+.left-sect {
+    width: 50%;
+    padding-top: 100%;
+    /* background-image: url(../images/jk_rowling_3.jpg); */
+    background-color: cadetblue;
+    /* filter: blur(30), grayscale(100%); */
+    display: flex;
+    justify-content: center;
+    z-index: -3;
+    position: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.photo {
+    width: 40%;
+    padding-top: 40%;
+    border-radius: 50%;
+    margin: 3%;
+    background-image: url(../images/jk_rowling_3.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: fixed;
+    border: 5px solid rgba(95, 158, 160, 0.411);
+}
+.right-sect {
+    width: 44%;
+    height: auto;
+    margin-left: 50%;
+    border-left: 6px solid black;
+    padding: 30px;
+    font-family: 'Mulish', sans-serif;
+    font-size: 20px;
+}
+
+/*contact us*/
+.content_contact {
+    width: 70%;
+    height: auto;
+    margin: auto;
+}
+.cards {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 100px;
+}
+.cd {
+    width: 300px;
+    height: 200px;
+    background-color: white;
+    margin: 30px;
+    text-align: center;
+}
+.cd i {
+    color: rgb(0, 191, 255);
+    font-size: 30px;
+    margin-top: 30px;
+}
+.cd h2 {
+    font-family: 'Oswald', sans-serif;
+    margin: 10px;
+}
+.cd p {
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.content_contact .contact {
+    display:;
+    width: 50%;
+    height: auto;
+    margin: auto;
+    background-color: white;
+    padding-top: 20px;
+}
+form label, form input, form textarea {
+    margin: 10px;
+    margin-left: 20px;
+    width: calc(100% - 50px);
+    font-family: 'Oswald', sans-serif;
+}
+form input {
+    height: 50px;
+}
+form textarea {
+    height: 100px;
+}
+form input {
+    font-size: 15px;
+}

@@ -1,0 +1,284 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+::selection {
+    color: white;
+    background-color: black;
+}
+a {
+    text-decoration: none;
+    color: black;
+}
+
+/* menu-bar starts*/
+.nav-bar {
+    background-color: black;
+    color: white;
+    width: 100%;
+    height: 80px;
+    display: flex;
+    position: fixed;
+}
+.nav-bar .logo {
+    font-family: 'Splash', cursive;
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding-left: 20px;
+    font-size: 40px;
+}
+.nav-bar ul {
+    display: flex;
+    flex-direction: row;
+    width: 50%;
+}
+.nav-bar ul li {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 25%;
+    height: 100%;
+}
+.nav-bar ul li a {
+    color: white;
+}
+.nav-bar ul li:nth-child(1) a {
+    color: red;
+}
+/*menu-bar ends*/
+
+/*structure of content*/
+.content {
+    width: 100%;
+    height: auto;
+    display: flex;
+    padding-top: 80px;
+}
+.content .left-nav {
+    width: 20%;
+    height: 100%;
+    padding-top: 10px;
+}
+.content .blog {
+    border-left: 1px solid rgb(141, 141, 141);
+    border-right: 1px solid rgb(141, 141, 141);
+    width: 50%;
+    height: 100%;
+    padding-top: 10px;
+}
+.content .right-nav {
+    width: 30%;
+    height: 100%;
+    padding-top: 10px; 
+}
+/* structure of content ends*/
+
+/*left-nav content*/
+.content .left-nav .book1, 
+.content .left-nav .book2 {
+    width: auto;
+    margin: auto;
+    margin-top:  10px;
+}
+.content .left-nav .book1 a .img, 
+.content .left-nav .book2 a .img,
+.content .left-nav .book3 a .img {
+    background-image: url(../images/JKR_2019_Cuckoo.png);
+    margin: auto;
+    background-position: center;
+    width: 80%;
+    height: 200px;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+.content .left-nav .book2 a .img {
+    background-image: url(../images/HPATPS_Hero_OnGrey.png);
+}
+.content .left-nav .book3 a .img {
+    background-image: url(../images/HPATCOS_Hero_OnGrey.png);
+}
+.content .left-nav .book1 a .img:hover, 
+.content .left-nav .book2 a .img:hover,
+.content .left-nav .book3 a .img:hover {
+    transform: scale(1.05);
+}
+.content .left-nav .book1 a h3, 
+.content .left-nav .book2 a h3,
+.content .left-nav .book3 a h3 {
+    font-family: 'Fira Sans', sans-serif;
+    text-align: center;
+}
+.content h2 {
+    font-family: 'Fira Sans', sans-serif;
+    text-align: center;
+}
+/* left-nav content ends*/
+/* blog content */
+.blog {
+    padding-bottom: 10px;
+}
+.blog .post1,
+.blog .post2 {
+    width: 90%;
+    height: auto;
+    margin: auto;
+    padding-top: 2px;
+}
+.blog .post1 .title,
+.blog .post2 .title {
+    font-family: 'Oswald', sans-serif;
+    font-size: 40px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.blog .post1 .date,
+.blog .post2 .date {
+    font-family: 'Oswald', sans-serif;
+    font-weight: 300;
+    padding-bottom: 10px;
+    color: rgb(145, 145, 145);
+}
+.blog .post1 .image1,
+.blog .post2 .image1 {
+    background-image: url(../images/blog1.jpg);
+    width: 100%;
+    height: 800px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.blog .post2 .image1 {
+    background-image: url(../images/post2.jpg);
+}
+.blog .post1 .description,
+.blog .post2 .description {
+    width: 100%;
+    height: auto;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-family: 'Raleway', sans-serif;
+    text-align: justify;
+}
+.blog .post1 .post-footer,
+.blog .post2 .post-footer {
+    display: flex;
+    flex-direction: row;
+}
+.blog .post1 .post-footer i,
+.blog .post2 .post-footer i {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-left: 10px;
+    font-size: 20px;
+}
+.blog .post1 .post-footer .read-more,
+.blog .post2 .post-footer .read-more {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+    height: 40px;
+    background-color: red;
+    color: white;
+    border: 1px solid black;
+    cursor: pointer;
+}
+/* blog content ends*/
+
+/*right-nav starts */
+.right-nav p {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 900;
+    text-align: center;
+    margin: 20px;
+}
+.right-nav .profile {
+    width: 250px;
+    height: 250px;
+    margin: auto;
+    background-image: url(../images/jk_rowling.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 50%;
+}
+.right-nav .about {
+    width: 80%;
+    height: auto;
+    margin: auto;
+    padding-top: 30px;
+    text-align: justify;
+    font-family: 'Mulish', sans-serif;
+    font-weight: 200;
+}
+
+.right-nav .socials {
+    padding-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    font-size: 30px;
+}
+.right-nav .socials i {
+    margin-left: 10px;
+    width: 50px;
+    height: 40px;
+    padding-top: 10px;
+    text-align: center;
+    border-radius: 50%;
+    background-color: black;
+    color: white;
+}
+.right-nav .newsletter {
+    width: 100%;
+    margin: auto;
+}
+.right-nav .newsletter h3 {
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-family: 'Raleway', sans-serif;
+    text-transform: uppercase;
+    font-size: 15px;
+}
+.right-nav .newsletter p {
+    font-family: 'Mulish', sans-serif;
+    font-weight: 200;
+}
+.right-nav .newsletter .profile {
+    width: 60px;
+    height: 60px;
+    margin: auto;
+    background-image: url(../images/jk_rowling_4.jpeg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 20%;
+}
+.right-nav .newsletter .name {
+    text-align: center;
+    padding-top: 10px;
+    font-family: 'Mulish', sans-serif;
+    font-weight: 900;
+}
+.right-nav .newsletter .submit {
+    width: 100%;
+    text-align: center;
+}
+.right-nav .newsletter .submit .subscribe {
+    width: 50%;
+    height: 40px;
+    text-indent: 10px;
+}
+.right-nav .newsletter .submit .button {
+    width: 80px;
+    height: 40px;
+    background-color: red;
+    color: white;
+    font-size: 15px;
+    font-family: 'Arial', sans-serif;
+}
