@@ -12,12 +12,15 @@ function validateForm() {
     } else if (z == "") {
         alert("Please fill the message: ");
         return false;
-    } else if (/[^a-zA-Z]/.test(x)) {
+    } else if (/[^a-zA-Z ]/.test(x)) {
         alert("The name must only contain alphabets: ");
         return false;
     } else if (!y.match(mailregex)) {
         alert("Please enter valid email address: ");
         return false;
+    } else {
+        alert("Your form has been submitted successfully: ");
+        return true;
     }
 
 }
