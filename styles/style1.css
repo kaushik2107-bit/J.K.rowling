@@ -207,6 +207,10 @@ form input {
         justify-content: center;
         align-items: center;
     }
+    .ham_menu li:hover {
+        color: black;
+        background-color: white;
+    }
     .ham_menu li a {
         color: white;
     }
