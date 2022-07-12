@@ -74,6 +74,7 @@
     background-size: cover;
     position: fixed;
     border: 5px solid rgba(95, 158, 160, 0.411);
+    z-index: -3;
 }
 .right-sect {
     width: 44%;
@@ -148,6 +149,30 @@ form input {
     .content {
         width: 100% !important;
     }
+    #about {
+        width: calc(100% - 60px) !important;
+        padding-top: 100px;
+    }
+    .left-sect, .photo {
+        display: none;
+    }
+    .jpg {
+        width: 200px;
+        height: 200px;
+        border-radius: 50%;
+        display: block;
+        background-image: url(../images/jk_rowling_3.jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        margin: auto;
+        
+    }
+    .right-sect {
+        width: 100%;
+        margin-left: -30px;
+        border: none;
+    }
     .nav-bar ul {
         display: none;
     }
@@ -185,6 +210,12 @@ form input {
     .ham_menu li a {
         color: white;
     }
+    .cards {
+        flex-direction: column;
+    }
+    .contact {
+        width: 90% !important;    
+    }
 }
 @media only screen and (max-width: 300px) {
     .nav-bar {
@@ -199,6 +230,9 @@ form input {
         display: none !important;
     }
     .ham_menu {
+        display: none !important;
+    }
+    .jpg {
         display: none !important;
     }
 }

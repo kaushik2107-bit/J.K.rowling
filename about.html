@@ -1,5 +1,6 @@
 <html>
     <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>JK Rowling</title>
         <link rel="stylesheet" href="styles/styles.css">
         <link rel="stylesheet" href="styles/style1.css">
@@ -10,7 +11,7 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@100&family=Mulish:wght@300&family=Oswald:wght@300;400&family=Raleway:wght@300&family=Splash&display=swap" rel="stylesheet">
     
-        <script src="/js/script.js"></script>
+        <script src="js/script.js"></script>
     </head>
     <body>
         <div class="nav-bar">
@@ -23,11 +24,21 @@
                 <li><a href="about.html" style="color: red;">About</a></li>
                 <li><a href="contact.html" style="color: white;">Contact</a></li>
             </ul>
+            <button class="fa fa-bars" id="fa-bars" style="color:white; display: block;" onclick="toggle1()"></button>
+            <button class="fa fa-times" id="fa-times" style="color:white; display: none;" onclick="toggle2()"></button>
+        
         </div>
 
-        <div class="content">
+        <div class="content" id="about">
+            <ul id="ham_menu" class="ham_menu" style="display: none;">
+                <li><a href="index.html">Blog</a></li>
+                <li><a href="books.html">Books</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
            <div class="left-sect"></div>
            <div class="photo"></div>
+           <div class="jpg"></div>
            <div class="right-sect">
             <p>Joanne Rowling was born on 31st July 1965 at Yate General Hospital near Bristol, and grew up in Gloucestershire in England and in Chepstow, Gwent, in south-east Wales.</p><br>
             <p>Her father, Peter, was an aircraft engineer at the Rolls Royce factory in Bristol and her mother, Anne, was a science technician in the Chemistry department at Wyedean Comprehensive, where Jo herself went to school. Anne was diagnosed with multiple sclerosis when Jo was a teenager and died in 1990, before the Harry Potter books were published.  Jo also has a younger sister, Di.</p><br>
@@ -50,6 +61,6 @@
             <p>Under the pseudonym Robert Galbraith, J.K. Rowling also writes crime novels, featuring private detective Cormoran Strike. The first five novels: The Cuckoo's Calling (2013), The Silkworm (2014), Career of Evil (2015), Lethal White (2018) and Troubled Blood (2020) all topped the national and international bestseller lists and have been adapted for television by the BBC and HBO.  The sixth book in the series, Ink Black Heart is to be published later this year.</p><br>
            </div> 
         </div>
-        <script src="/js/script.js"></script>
+        <script src="js/script.js"></script>
     </body>
 </html>
